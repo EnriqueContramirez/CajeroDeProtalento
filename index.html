@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cajero Banco Protalento</title>
+</head>
+<body>
+    <div id="bienvenida">
+        <h1>Banco Protalento</h1>
+        <h2>¡Bienvenido!</h2>
+        <p>Presione Iniciar para realizar cualquier transacción</p>
+        <div class="iniciar-cajero">
+            <button id="boton-iniciar-cajero" >Iniciar</button>
+        </div>
+    </div>
+
+    <section id ="tarjetas-cuentas">
+      <p>Seleccine la cuenta con la que desea ingresar</p>
+      <label for="David">David Zonana</label>
+      <input name = cuentas id="David" type="radio">
+      
+      <label for="Enrique">Enrique</label>
+      <input name = cuentas type="radio" id="Enrique">
+
+      <label for="Juan">Juan</label>
+      <input name = cuentas type="radio" id="Juan">
+
+      <button id="seleccionar-cuenta"> Seleccionar </button>
+    </section>
+    
+    <div id="password">
+      <h2>¡Hola David!</h2>
+      <label for="contraseña">Por favor Ingrese su contraseña</label>
+      <input name=contraseña type="password" id="contraseña">
+      <p>Presione la tecla "Completa" para continuar</p>
+      <button>Completa</button>
+    </div>
+
+    <div id="dashboard">
+      <div id="Container-opciones">
+        <button class="opcion-consulta-saldo">
+          Consultar Saldo
+        </button>
+
+        <button class="opcion-ingresar-monto">
+          Ingresar Monto
+        </button>
+
+        <button class="opcion-retirar monto">
+          Retirar Monto
+        </button>
+      </div>
+    </div>
+
+    <div id="pantalla-consulta-saldo">
+      <h2>Estimado David, su saldo actual es de:</h2>
+      <p>100.000 Pesos Colombianos</p>
+    </div>
+
+    <div id="pantalla-ingresar-monto">
+      <h2>Digite por favor el monto a ingresar en su cuenta</H2>
+      <input type="number">
+    </div>
+
+    <div id="pantalla-retirar-monto">
+      <h2>Digite por favor el monto a retirar de su cuenta</h2>
+      <input type="number">
+    </div>
+
+    </body>
+<script src="app.js"></script>
+</html>
