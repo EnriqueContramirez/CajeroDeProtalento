@@ -19,24 +19,18 @@
 
     <section id ="tarjetas-cuentas">
       <p>Seleccine la cuenta con la que desea ingresar</p>
-      <label for="David">David Zonana</label>
-      <input name = cuentas id="David" type="radio">
-      
-      <label for="Enrique">Enrique</label>
-      <input name = cuentas type="radio" id="Enrique">
-
-      <label for="Juan">Juan</label>
-      <input name = cuentas type="radio" id="Juan">
-
+      <div id="contenedor-cuentas">
+        
+      </div>
       <button id="seleccionar-cuenta"> Seleccionar </button>
     </section>
     
     <div id="password">
-      <h2>¡Hola David!</h2>
+      <h2>¡Hola <span id="nombreDeLaPersona"></span></h2>
       <label for="contraseña">Por favor Ingrese su contraseña</label>
       <input name=contraseña type="password" id="contraseña">
       <p>Presione la tecla "Completa" para continuar</p>
-      <button>Completa</button>
+      <button id="completa">Completa</button>
     </div>
 
     <div id="dashboard">
@@ -70,6 +64,6 @@
       <input type="number">
     </div>
 
-    </body>
+</body>
 <script src="app.js"></script>
 </html>
