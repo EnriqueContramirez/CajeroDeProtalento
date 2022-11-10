@@ -70,7 +70,7 @@ function iniciarApp () {
 // cuando le demos a la opción de Iniciar van a salir en pantalla las opciones de usuario que pueden continuar, para seleccionarlas
 
 function seleccionarUsuario (){
-    seccionCuentas.style.display = 'block';
+    seccionCuentas.style.display = 'flex';
     pantallaBienvenida.style.display = 'none';
     seleccionarCuenta.addEventListener('click', ingresarContrasena);
     personas.forEach((persona) =>{
@@ -89,7 +89,7 @@ function seleccionarUsuario (){
 // Una vez seleccionado el usuario, tenemos que solicitarle al cliente que ingrese su contraseña
 
 function ingresarContrasena(){
-    seccionPassword.style.display = 'block';
+    seccionPassword.style.display = 'flex';
     if (inputPersona1.checked) {
         nombreDeLaPersona.innerHTML = inputPersona1.id;
         seccionCuentas.style.display = 'none';
@@ -113,7 +113,7 @@ function ingresarContrasena(){
 
 function validarContrasena (){
     if (constrasena.value == cuentaElegida.passwordCuenta ) {
-        seccionDashboard.style.display = 'block';
+        seccionDashboard.style.display = 'flex';
         seccionPassword.style.display = 'none';
     } else if (constrasena.value.length == 0){ 
         alert('Debes Ingresar tu contraseña para continuar')
@@ -129,7 +129,7 @@ function validarContrasena (){
 
 function consultaDeSaldo (){
     seccionDashboard.style.display = 'none';
-    seccionConsulta.style.display = 'block';
+    seccionConsulta.style.display = 'flex';
     botonSalir.style.display = 'block';
     botonSalir.addEventListener('click', salir)
     mensajeSaldo = `
@@ -141,7 +141,7 @@ function consultaDeSaldo (){
 
 function ingresarMonto (){
     seccionDashboard.style.display = 'none';
-    seccionIngresarMonto.style.display = 'block';
+    seccionIngresarMonto.style.display = 'flex';
     botonSumarMonto.addEventListener('click',sumarMonto)
 }
 
@@ -174,7 +174,7 @@ function sumarMonto () {
 
 function retirarMonto (){
     seccionDashboard.style.display = 'none';
-    seccionRetirarMonto.style.display = 'block';
+    seccionRetirarMonto.style.display = 'flex';
     botonRestarMonto.addEventListener('click', restarMonto)
 
 }

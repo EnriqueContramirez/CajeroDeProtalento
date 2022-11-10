@@ -1,5 +1,44 @@
 #bienvenida {
-    background-color: purple;
-    width: 100vp;
-    height: 1000vp;
+    background-color: #4267cd;
+    width: 100%;
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+#logopro{
+    height: 50px;
+    width: 200px;
+    justify-self: center;
+    align-self: center;
+}
+
+#tituloBienvenida{
+    height: auto;
+    width: 300px;
+    color: #4267cd;
+    text-align: center;
+}
+
+#titulocontenedor{
+    width: auto;
+    background-color: white;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+}
+
+.botones_cajero {
+    background-color: #f1af4d;
+    color: black;
+    width: 90px;
+    height: 45px;
+    border-radius: 20%;
+
 }
