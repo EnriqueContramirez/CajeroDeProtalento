@@ -35,35 +35,43 @@
 
     <div id="dashboard">
       <div id="Container-opciones">
-        <button class="opcion-consulta-saldo">
+        <button id="botonConsultaSaldo" class="opcion-consulta-saldo">
           Consultar Saldo
         </button>
 
-        <button class="opcion-ingresar-monto">
+        <button id="botonIngresarMonto" class="opcion-ingresar-monto">
           Ingresar Monto
         </button>
 
-        <button class="opcion-retirar monto">
+        <button id="botonRetirarMonto" class="opcion-retirar monto">
           Retirar Monto
         </button>
       </div>
     </div>
 
     <div id="pantalla-consulta-saldo">
-      <h2>Estimado David, su saldo actual es de:</h2>
-      <p>100.000 Pesos Colombianos</p>
+
     </div>
 
     <div id="pantalla-ingresar-monto">
       <h2>Digite por favor el monto a ingresar en su cuenta</H2>
-      <input type="number">
+      <input id="montoParaSumar" type="number">
+      <button id="botonSumarMonto">Adicionar a la cuenta</button>
+    </div>
+    <div id="new-balance-after-entry">
     </div>
 
     <div id="pantalla-retirar-monto">
       <h2>Digite por favor el monto a retirar de su cuenta</h2>
-      <input type="number">
+      <input id="montoParaRestar" type="number">
+      <button id="botonRestarMonto">Retirar de la cuenta</button>
+    </div>
+    <div id="new-balance-after-retry">
     </div>
 
+    <button id="botonSalir">
+      Salir
+    </button>
 </body>
 <script src="app.js"></script>
 </html>
