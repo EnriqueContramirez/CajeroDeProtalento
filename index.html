@@ -22,35 +22,35 @@
     </div>
 
     <section id ="tarjetas-cuentas">
+      <h2>Banco Protalento</h2>
       <p>Seleccine la cuenta con la que desea ingresar</p>
       <div id="contenedor-cuentas">
         
       </div>
-      <button  class="botones_cajero id="seleccionar-cuenta"> Seleccionar </button>
+      <button  class="botones_cajero" id="seleccionar-cuenta"> Seleccionar </button>
     </section>
     
-    <div id="password">
-      <h2>¡Hola <span id="nombreDeLaPersona"></span></h2>
+    <section id="password">
+      <h2>¡Hola <span id="nombreDeLaPersona"></span>!</h2>
       <label for="contraseña">Por favor Ingrese su contraseña</label>
       <input name=contraseña type="password" id="contraseña">
-      <p>Presione la tecla "Completa" para continuar</p>
-      <button id="completa">Completa</button>
-    </div>
+      <p>Presione la tecla "Validar" para continuar</p>
+      <button class="botones_cajero" id="completa">Validar</button>
+    </section>
 
     <div id="dashboard">
-      <div id="Container-opciones">
-        <button id="botonConsultaSaldo" class="opcion-consulta-saldo">
+        <h2>Seleccione la transacción que desea realizar</h2>
+        <button id="botonConsultaSaldo" class="botonTransacciones">
           Consultar Saldo
         </button>
 
-        <button id="botonIngresarMonto" class="opcion-ingresar-monto">
+        <button id="botonIngresarMonto" class="botonTransacciones">
           Ingresar Monto
         </button>
 
-        <button id="botonRetirarMonto" class="opcion-retirar monto">
+        <button id="botonRetirarMonto" class="botonTransacciones">
           Retirar Monto
         </button>
-      </div>
     </div>
 
     <div id="pantalla-consulta-saldo">
@@ -60,7 +60,7 @@
     <div id="pantalla-ingresar-monto">
       <h2>Digite por favor el monto a ingresar en su cuenta</H2>
       <input id="montoParaSumar" type="number">
-      <button id="botonSumarMonto">Adicionar a la cuenta</button>
+      <button class="botones_cajero" id="botonSumarMonto">Adicionar a la cuenta</button>
     </div>
     <div id="new-balance-after-entry">
     </div>
@@ -68,14 +68,16 @@
     <div id="pantalla-retirar-monto">
       <h2>Digite por favor el monto a retirar de su cuenta</h2>
       <input id="montoParaRestar" type="number">
-      <button id="botonRestarMonto">Retirar de la cuenta</button>
+      <button class="botones_cajero" id="botonRestarMonto">Retirar de la cuenta</button>
     </div>
     <div id="new-balance-after-retry">
     </div>
 
-    <button id="botonSalir">
-      Salir
-    </button>
+    <div class="contenedorBotonSalir">
+      <button class="botones_cajero" id="botonSalir">
+        Salir
+      </button>
+    </div>
 </body>
 <script src="app.js"></script>
 </html>

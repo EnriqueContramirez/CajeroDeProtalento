@@ -72,15 +72,15 @@ function iniciarApp () {
 function seleccionarUsuario (){
     seccionCuentas.style.display = 'flex';
     pantallaBienvenida.style.display = 'none';
-    seleccionarCuenta.addEventListener('click', ingresarContrasena);
     personas.forEach((persona) =>{
         usuarioSeleccionado = 
         `
-        <label for=${persona.nombre}>${persona.nombre}</label>
         <input name = cuentas id="${persona.nombre}" type="radio">
+        <label class="lebel-cuentas" for=${persona.nombre}>${persona.nombre}</label>
         `
     contenedorCuentas.innerHTML += usuarioSeleccionado;
     })
+    seleccionarCuenta.addEventListener('click', ingresarContrasena);
     inputPersona1 = document.getElementById('David')
     inputPersona2 = document.getElementById('Lina')
     inputPersona3 = document.getElementById('Juan')
@@ -165,7 +165,7 @@ function sumarMonto () {
         botonSalir.addEventListener('click', salir)
         messajeBalanceAfterEntry = `
             <p>Usted ha ingresado un valor de ${montoParaSumar} dolares</p>
-            <p>Su nuevo saldo es de ${cuentaElegida.saldo} dolares</p>
+            <h2>Su nuevo saldo es de ${cuentaElegida.saldo} dolares</h2>
             `
         newBalanceAfterEntry.innerHTML = messajeBalanceAfterEntry
     }
@@ -199,7 +199,7 @@ function restarMonto () {
         botonSalir.addEventListener('click', salir)
         messajeBalanceAfterRetry = `
          <p>Usted ha retirado la cantidad de ${montoParaRestar} dolares</p>
-        <p>Su saldo ahora es de ${cuentaElegida.saldo} dolares</p>
+        <h2>Su saldo ahora es de ${cuentaElegida.saldo} dolares</h2>
         `
         newBalanceAafterRetry.innerHTML = messajeBalanceAfterRetry;
     }

@@ -1,7 +1,14 @@
-#bienvenida {
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@200&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Bakbak One', cursive;
     background-color: #4267cd;
+}
+
+#bienvenida {
     width: 100%;
-    height: 760px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,13 +39,115 @@
     flex-direction: column;
     justify-self: center;
     justify-content: center;
+    border-radius: 25px;
 }
 
 .botones_cajero {
-    background-color: #f1af4d;
+    background-color: #FFCB42;
     color: black;
-    width: 90px;
-    height: 45px;
-    border-radius: 20%;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
 
+}
+
+.lebel-cuentas{
+    display: inline-block;
+    width: 200px;
+    height: 130px;
+    background-color: #0F52BA;
+    padding: 15px;
+    border-radius: 20px;
+    border: 10px solid white;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#tarjetas-cuentas, #password, #dashboard {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#contenedor-cuentas input {
+    display: none;
+}
+
+input:checked + label{
+    background-color: #FFCB42;
+    color: #0F52BA;
+}
+
+#seleccionar-cuenta{
+    margin: 30px;
+}
+
+#contenedor-cuentas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    margin: 100px;
+    border: 5px solid #FFCB42;
+    border-radius: 40px;
+    background-color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.botonTransacciones {
+    width: 450px;
+    height: 100px;
+    margin: 15px;
+    border: 5px solid white;
+    border-radius: 20px;
+    background-color: #FFCB42;
+    color: #0F52BA;
+    font-family: 'Bakbak One', cursive;
+    font-size: 25px;
+
+}
+
+#pantalla-consulta-saldo, #pantalla-ingresar-monto, #new-balance-after-entry, #pantalla-retirar-monto, #new-balance-after-retry, .contenedorBotonSalir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contenedorBotonSalir {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 780px){
+    #contenedor-cuentas{
+        flex-direction: column;
+    }
+
+    .lebel-cuentas{
+        width: 180px;
+        height: 110px;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 5px;
+    }
 }
