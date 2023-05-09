@@ -14,7 +14,7 @@ Datos importantes para utilizar la aplicación web: (Usuarios, saldos iniciales 
 - Lina, Saldo de 300 dolares, Contraseña: 456.
 - Juan, Saldo de 400 dolares, Contraseña: 789.
 
-Metodologías utilizadas: 
+Tecnologias utilizadas: 
 - HTML
 - CSS
 - JavaScript
@@ -32,6 +32,6 @@ Conceptos puestos en práctica durante el proyecto:
 
 Este proyecto se realizó con fines académicos para poner en práctica los conceptos y conocimientos adquiridos durante el programa de Desarrollo Web Full Stack ante DEV F y Protalento. 
 
-Autor: 
+## Autor: 
 Franyerson Enrique Contreras Ramirez
 21 de noviembre de 2022
